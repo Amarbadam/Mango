@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+html,
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* -------------------------------------------*/
+/* REUSABLE */
+/* -------------------------------------------*/
+
+h1 {
+  font-size: 55px;
+  font-weight: 300;
+  padding-top: 260px;
+  padding-bottom: 4%;
+  word-spacing: 4px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 38px;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 80px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+p {
+  font-size: 20px;
+  color: #555;
+}
+
+.btn {
+  color: #fff;
+  background-color: #e67e22;
+  border: none;
+  border-radius: 200px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #d67118;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  height: 500px;
+  margin: 60px auto 80px auto;
+}
+
+/* -------------------------------------------*/
+/* HEADER */
+/* -------------------------------------------*/
+#nav-bar {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px #ccc;
+}
+
+#nav-bar div {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+#nav-bar .logo {
+  float: left;
+  width: 70px;
+  height: 70px;
+}
+
+.main-nav {
+  list-style: none;
+  float: right;
+  margin: 21px auto;
+  padding-left: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: #555;
+}
+
+.main-nav li a:hover {
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #d67118;
+}
+
+/* ---------- HERO SECTION ----------*/
+.hero-container {
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  /*    min-height: 100vh;*/
+  height: 750px;
+}
+#h3 {
+  color: whitesmoke;
+}
+.hero-container .outer-div {
+  margin: 5px;
+  position: relative;
+}
+
+#header-img {
+  width: 440px;
+  height: 45%;
+  background-image: url(https://www.teahub.io/photos/full/53-534699_howl-s-moving-castle-baba-yaga-house-concept.jpg);
+  background-size: cover;
+  margin-top: 27%;
+  text-align: center;
+}
+
+.right {
+  text-align: center;
+  margin-top: 14%;
+  background-image: url(https://i.imgur.com/VDTfyDQ.jpg);
+  background-size: cover;
+  width: 850px;
+  height: 45%;
+}
+div h2 {
+  color: white;
+}
+#right-img {
+  padding-top: 20%;
+}
+a {
+  text-decoration: none;
+}
+.right-div {
+  text-align: center;
+}
+
+#buttom-img {
+  background-image: url("https://ae01.alicdn.com/kf/HTB1KLOmb93PL1JjSZPcq6AQgpXau/Hot-Cool-Cosplay-Costumes-Anime-Kakegurui-Yumeko-Jabami-Japanese-School-Girls-Uniform-Full-Set-Jacket-Shirt.jpg_Q90.jpg_.webp");
+  background-size: cover;
+  width: 100%;
+  display: grid;
+  height: 100%;
+  padding-top: 10px;
+}
+#manga-img {
+  background-image: url("https://wallpaperaccess.com/full/748254.jpg");
+  background-size: cover;
+  width: 100%;
+  display: grid;
+  padding-bottom: 10px;
+  height: 100%;
+  margin-top: 7px;
+}
+.rd {
+  width: 46%;
+  height: 35%;
+  padding-top: 0 auto;
+  display: inline-block;
+  padding-top: 9px;
+}
+#md {
+  width: 52.2%;
+  height: 35%;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* -------------------------------------------*/
+/* BENEFITS SECTION */
+/* -------------------------------------------*/
+.benefits-section {
+  background-color: rgb(58, 74, 109);
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 1000px;
+}
+
+.container .outer-div {
+  margin: 0 20px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.benefits-section h2 {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: aliceblue;
+  font-weight: 300;
+}
+
+.container .benefit-listing {
+  border: 1px solid white;
+  width: 180px;
+  border-radius: 180px;
+
+  height: 180px;
+}
+#img-1 {
+  background-image: url(https://amazingstories.com/wp-content/uploads/2013/07/rintaro.jpg);
+  background-size: cover;
+}
+#img-2 {
+  background-image: url(https://s4.anilist.co/file/anilistcdn/character/large/b40881-F3gr1PkreDvj.png);
+  background-size: cover;
+}
+#img-3 {
+  background-image: url(https://i.pinimg.com/236x/9a/27/0b/9a270b7b3b762ef8bca3d245bb2032ce--th%E1%BB%A9-hai-ta.jpg);
+  background-size: cover;
+}
+#img-4 {
+  background-image: url(https://static.wikia.nocookie.net/characterprofile/images/2/27/Saitama.png/revision/latest/scale-to-width-down/340?cb=20160115153958);
+  background-size: cover;
+}
+#img-5 {
+  background-image: url(https://cdn.myanimelist.net/images/characters/4/277146.jpg);
+  background-size: cover;
+}
+#img-6 {
+  background-image: url(https://www.dhresource.com/0x0/f2/albu/g7/M01/15/F5/rBVaSVvmlIuAMmWvAAOldca4QaE621.jpg/tokyo-ghoul-kaneki-ken-anime-art-silk-poster.jpg);
+  background-size: cover;
+}
+#img-7 {
+  background-image: url(https://64.media.tumblr.com/0ebd9d306b212e7fe202fc150211c268/9ddee3b5d0fd062a-3b/s540x810/fd039b55b8cb1892ff3519fc8ed1e5d46b5670f3.png);
+  background-size: cover;
+}
+#img-8 {
+  background-image: url(https://static.zerochan.net/Roy.Mustang.full.84535.jpg);
+  background-size: cover;
+}
+#img-9 {
+  background-image: url(https://cdn.myanimelist.net/r/360x360/images/characters/6/275276.jpg?s=21360aca4318ff3fb6cd219da3ed4a81);
+  background-size: cover;
+}
+#img-10 {
+  background-image: url(https://i.pinimg.com/originals/fe/f6/04/fef604480968bf468da0c14431e2446a.png);
+  background-size: cover;
+}
+#img-11 {
+  background-image: url(https://i.pinimg.com/736x/5e/d3/94/5ed394a7161bf2c42a776e63d4f6de51.jpg);
+  background-size: cover;
+}
+#img-12 {
+  background-image: url(https://cdn.myanimelist.net/images/characters/9/345616.jpg);
+  background-size: cover;
+}
+#img-13 {
+  background-image: url(https://images8.alphacoders.com/100/1000869.jpg);
+  background-size: cover;
+}
+#img-14 {
+  background-image: url(https://i.ebayimg.com/00/s/NTAwWDUwMA==/z/bqUAAOSwAxpdrz5d/$_57.JPG?set_id=8800005007);
+  background-size: cover;
+}
+#img-15 {
+  background-image: url(https://i.redd.it/44mv361e60n51.jpg);
+  background-size: cover;
+}
+
+/* -------------------------------------------*/
+/* PRODUCTS SECTION */
+/* -------------------------------------------*/
+.container .product-listing {
+  display: inline-block;
+  max-width: 200px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.product-listing img {
+  width: 200px;
+  height: auto;
+}
+
+.product-listing h4 {
+  text-align: center;
+  margin: 2px auto;
+  font-weight: 300;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.product-listing h4 span {
+  font-weight: 400;
+  font-size: 18px;
+  color: #555;
+  padding-left: 0;
+}
+
+.btn-ghost {
+  display: block;
+  outline: none;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  color: #252537;
+  letter-spacing: 0.05em;
+}
+
+/* -------------------------------------------*/
+/* VIDEO SECTION */
+/* -------------------------------------------*/
+.video-section {
+  background-image: url(https://cdn.hipwallpaper.com/i/9/82/BNAjr5.jpg);
+  background-size: cover;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.video-section h3 {
+  color: #fff;
+}
+
+.video-section div ul {
+  width: 470px;
+  height: auto;
+  margin: 0;
+  color: #fff;
+}
+
+.video-section div li {
+  font-size: 18px;
+  font-weight: 200;
+  padding-bottom: 15px;
+}
+
+/* -------------------------------------------*/
+/* FOOTER SECTION */
+/* -------------------------------------------*/
+.footer-section {
+  max-width: 1140px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer div {
+  margin: 0 auto;
+}
+
+.footer .logo {
+  color: #e67e22;
+}
+
+.footer h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.footer ul {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 0;
+}
+
+.social {
+  float: left;
+}
+
+.social ul li {
+  float: left;
+}
+
+.social ul i {
+  font-size: 30px;
+  color: #555;
+  padding-top: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.social ul i:hover {
+  color: #d67118;
+}
+
+.footer-links ul a {
+  list-style: none;
+  text-decoration: none;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.footer-links ul a:hover {
+  color: #d67118;
+}
+
+.email-signup {
+  padding-bottom: 40px;
+}
+
+.footer-section form {
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.section-wrapper {
+  min-width: 224px;
+  overflow: hidden;
+  display: inline-block;
+  padding-top: 10px;
+  float: left;
+}
+
+input[type="email"],
+select,
+textarea {
+  width: 165px;
+  padding: 8px;
+  padding-left: 20px;
+  border: 1px solid #e67e22;
+  border-radius: 200px 0 0 200px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  resize: vertical;
+  font-size: 13px;
+  float: left;
+}
+
+.footer-section .btn-ghost {
+  color: #fff;
+  background-color: #e67e22;
+  margin: 4px 0 4px 0px;
+  border-radius: 0 200px 200px 0;
+  width: 100px;
+}
+
+.footer-section .btn-ghost:hover {
+  color: #fff;
+  border: 2px solid #d67118;
+  background-color: #d67118;
+}
+
+.footer-credit {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-right: 2%;
+  padding-left: 2%;
+  border-top: 2px solid #d67118;
+}
+
+.footer-credit a {
+  color: #e67e22;
+}
+
+.footer-credit a:hover,
+.footer-credit a:active {
+  color: #d67118;
+}
+
+/* -------------------------------------------*/
+/* MEDIA QUERIES */
+/* -------------------------------------------*/
