@@ -1,0 +1,111 @@
+<%- include('./layout/header.ejs'); %>
+<div class="form-row-glass">
+  <input type="text" class="field" placeholder="Хайлт...">
+  
+  <div class="img-find"></div>
+</div>
+  <div class="all-info">
+        <div class="flex-container">
+          <div class="flax-main">
+            <main class="main-content">
+              <section class="news-posts">
+                <% for(var i = users.length-1; i >=0; i--) { %>
+                <article class="news-post">
+                  <img src="../images/newsPhoto/<%=users[i].blogPhoto %>" class="left-photo" >
+                  <div class="one-news-blog">
+                    <div class="item-news">
+                      <ul>
+                        <li><a href="#0" class="item">Аялал</a></li>
+                        <li><a href="#0" class="item">Эрүүл Мэнд</a></li>
+                      </ul>
+                    </div>
+                    <a href="content/<%=users[i].id %>" >
+                      <h2 class="news-post-title"> <%= users[i].title %></h2>
+                    </a>
+                    
+                    <div class="footer">
+                      
+                      
+                      <div class="name-author">Мэдээ оруулсан: <%= users[i].user %></div>
+                    </div>
+                    <time class="news-time"><%= users[i].date %></time> 
+                    <div class="text"> <br>Үргэлжлүүлж унших  </div>
+                  </div>
+                </article>
+                <%  } %>
+            
+              </section>
+            </main>
+          </div>
+      
+          <div class="flex-aside">
+            <aside class="right-side-block">
+              <div class="different-sections">
+      
+                <div class="different-section">
+                  <h3 class="right-news-titles">Шинэ Мэдээ</h3>
+                  <div class="right-side-content">
+                    <section class="right-last-news">
+                      <% for(var i=0; i< users.length; i++) { %>
+                      <article class="right-news">
+                        <div class="one-right-photo">
+                          <img src="../images/newsPhoto/<%= users[i].blogPhoto %>" 
+                          width="50px"
+                          height="50px"
+                          />
+                        </div>
+                        <div class="side-info">
+                          <time class="news-time" datetime="2019-06-14"><%= users[i].date %></time>
+                          <a href="#0">
+                            <h3 class="right-news-title"><%= users[i].title %> </h3>
+                          </a>
+                        </div>
+      
+                      </article>
+                      <% } %> 
+                     
+      
+                   
+      
+                    </section>
+                  </div>
+      
+                </div>
+      
+                <div class="different-section">
+                  <h3 class="right-news-titles">Сэтгэгдэл</h3>
+                  <div class="right-side-content">
+                    <section class="email-address">
+                      <form class="form-row">
+                        <label class="form-group">
+                          <input type="email" class="field" placeholder="Email-аdress" required>
+                        </label>
+                        <div class="form-row-group">
+                          <button class="button">Илгээх</button>
+                        </div>
+                      </form>
+                    </section>
+                  </div>
+      
+                </div>
+                
+            <div class="different-section">
+                  <h3 class="right-news-titles">Ангилал</h3>
+                  <div class="right-side-content">
+                    <section class="all-items-list">
+                      <ul class="items-list">
+                        <li><a href="#0" class="list-item">Гоёл<span class="number">12</span></a></li>
+                        <li><a href="#0" class="list-item">Эрүүл мэнд<span class="number">4</span></a></li>
+                        <li><a href="#0" class="list-item">Амьдралын хэв маяг<span class="number">145</span></a></li>
+                        <li><a href="#0" class="list-item">Хөгжим<span class="number">28</span></a></li>
+                        <li><a href="#0" class="list-item">Спорт<span class="number">62</span></a></li>
+                        <li><a href="#0" class="list-item">Йог<span class="number">8</span></a></li>
+                      </ul>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <%- include('./layout/footer.ejs'); %>
