@@ -61,7 +61,7 @@
    
 8. Mango blog open Home
    
-   <img src="https://scontent.fuln4-1.fna.fbcdn.net/v/t1.15752-9/173187326_306527094410981_5453798534522007180_n.png?_nc_cat=111&ccb=1-3&_nc_sid=ae9488&_nc_ohc=gvrOtwWnS-0AX-    O6xUV&_nc_ht=scontent.fuln4-1.fna&oh=dffbb8820b4889cf034621fd18356700&oe=60A17554" />
+   <img src="https://scontent.fuln4-1.fna.fbcdn.net/v/t1.15752-9/173187326_306527094410981_5453798534522007180_n.png?_nc_cat=111&ccb=1-3&_nc_sid=ae9488&_nc_ohc=gvrOtwWnS-0AX-O6xUV&_nc_ht=scontent.fuln4-1.fna&oh=dffbb8820b4889cf034621fd18356700&oe=60A17554" />
    
   
   <img src="https://scontent.fuln4-1.fna.fbcdn.net/v/t1.15752-9/174150675_511906733351206_7108543604774272003_n.png?_nc_cat=109&ccb=1-3&_nc_sid=ae9488&_nc_ohc=4VHTWdcn_XwAX9BCBa-&_nc_ht=scontent.fuln4-1.fna&oh=440c548350c452f664b9c78f42285cc6&oe=60A11116" />
