@@ -1,7 +1,7 @@
 # Mango blog page 
  Ашиглах заавар:
 
-1.Download хийнэ: Onilin_shop 'Folder name '
+1.Download хийнэ: Onlin_shop 'Folder name '
 
    
     file-> Open Folder in Visual Studio
