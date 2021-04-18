@@ -1,11 +1,20 @@
 
-  <%- include('./layout/header.ejs'); %>
+
 
   <link rel="stylesheet" href="../css/img.css">
 <div id="hero-slides">
     <div id="header">
       <div id="logo"></div>
-   
+        
+	  <nav class="menu-list">
+		<ul>
+		  <li><a href="/" class="menu-list-item">Home</a></li>
+		  <li><a href="/img" class="menu-list-item">Image</a></li>
+	   
+		  <li><a href="/about" class="menu-list-item">About</a> </li>
+		  <li><a href="/login" class="menu-list-item">Login</a></li>
+		</ul>
+	  </nav>
     </div>
     <div id="slides-cont">
       <div class="button" id="next"></div>
@@ -26,7 +35,7 @@
       <div id="next-catch"></div>
       <div id="prev-catch"></div>
     </div>
-    <div  id="footer"><a href="/" >
+    <div  id="footer"><a href="" >
         <div  id="dribbble" > </div></a></div>
   </div>
 <script>

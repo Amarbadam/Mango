@@ -1,9 +1,5 @@
 <%- include('./layout/header.ejs'); %>
-
-
-
-
-  <div class="all-info">
+ <div class="all-info">
         <div class="flex-container">
           <div class="flax-main">
             <main class="main-content">
@@ -85,7 +81,7 @@
                     <section class="all-items-list">
                       <ul class="items-list">
                         <% for(var i=0; i< users.length; i++) { %>
-                          <li><a href="category/<%=users[i].category %>" class="list-item"><%=users[i].category %><span class="number">12</span></a></li>
+                          <li><a href="category/<%=users[i].category %>" class="list-item"><%=users[i].category %></a></li>
                        
                           <% } %> 
                       </ul>

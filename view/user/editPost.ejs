@@ -19,12 +19,22 @@
     <div class="mb-3">
        <textarea placeholder="Content" name="content" id="" cols="30" rows="10" class="form-control"><%= blog.description %></textarea>
     </div>
-
+<br>
     <div class="mb-3">
      <img src="../images/newsPhoto/<%= blog.blogPhoto %>" 
       height="200px"
       width="200px">
+      
   <input type="file" class="form-control" name="blogPhoto">
+ <br>
+  <label  class="form-label">Category</label>
+  <select id="cars" name="category" class="form-control">
+   
+    <option value="manga">Manga</option>
+    <option value="music">Music</option>
+    <option value="love">Love Story</option>
+    <option value="top">Top 10 anime</option>
+  </select>
 
     </div>
     <button type="submit" class="btn btn-primary">Update</button>
