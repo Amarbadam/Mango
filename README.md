@@ -47,7 +47,7 @@
 
  	DB_HOST  = 'localhost'
 	DB_USERNAME  = 'root'
-	DB_PASSWORD = '4321'
+	DB_PASSWORD = ' ****'     /your password /
 	DB_NAME = 'nodelogin'
 
          SERVER_PORT = 3000
