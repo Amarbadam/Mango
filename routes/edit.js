@@ -22,10 +22,14 @@ router.post('/edit/:id', function(request, response) {
 	var username = request.body.username;
 	var password = request.body.password;
 	var email = request.body.email;
+	var photo = request.files.photo;
+	var fileName = photo.name;
 	var id = request.params.id;
-	connection.query('UPDATE accounts SET username=? , password=?, email=? WHERE id = ?', [username, password, email,id], 
+	connection.query('UPDATE accounts SET username=? , password=?, email=?, profilePicture=? WHERE id = ?',
+	 [username, password, email, fileName, id], 
 	function (error, results, fields) {
 		if (!error) {
+			photo.mv('./public/images/avatars'+ fileName);
 			response.redirect("/admin");
 		}else {
 			console.log(error);

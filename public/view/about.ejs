@@ -1,0 +1,67 @@
+<%- include('./layout/header1.ejs'); %>
+	<link rel="stylesheet" href="css/about.css">
+	<div class="container">
+    	<div class="row">
+    	    <div class=" about-content animated fadeIn scrollable" >
+    	    	<h1 class="animated fadeIn one">about</h1>
+    	       	<div class="about-me" 
+				   style="transform: translateY(0px) translateZ(0px); margin-top:20px">
+    	       		<div class="animated fadeIn two">
+    	            	<p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+							 industry's standard dummy text ever since the 1500s, of type and scrambled it to make
+							  a type specimen book. But also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    	            	<p>It has survived not only five centuries, but also the leap into electronic typesetting, 
+							remaining essentially unchanged.</p>
+    	            </div>
+    	       		<div class="Synopsis-highlightLine five" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+    	       		<div class="animated fadeIn three">
+    	            	<p class="Synopsis-highlight">Cinnamon eu so, cultivar sweet crema java blue mountain iced 
+							cappuccino acerbic flavour. Con panna, dark coffee coffee crema cortado, carajillo sugar
+							 wings robust coffee. Spoon, iced organic, medium, acerbic dripper pumpkin spice robust
+							  black single origin. Qui americano coffee milk lungo crema dripper. Grinder plunger pot 
+							  est percolator medium shop latte foam crema café au lait wings.</p>
+    	            </div>
+    	          
+    	        </div>
+    	    </div>
+         
+         </div>
+    	</div>
+   
+
+
+
+	<div class="river">
+
+   <% for(var i=0 ; i< users.length; i++) { %>
+		<div class="card--container">
+			<div class="card--heading__bg">
+				<div class="card--cutout"><span class="fa fa-user fa-5x"></span></div>
+				<h2 class="card--title"><%= users[i].username %></h2>
+				<hr class="header--divider">
+				<h3 class="card--subtitle"><%= users[i].email %></h3>
+			</div>
+			<div class="card--content__bg">
+				<div class="card--content">
+					<h4 class="content--subtitle">МЭДЭЭЛЭЛ</h4>
+					<p>Example text written in such a way to pique your
+						 curiosity but also prove a point. The point
+						  being that this text can be very long.</p>
+				</div>
+			<hr class="social--divider">
+			<div class="social--container">
+				<ul>
+					<a href="http://google.com"><li class="social--icon fa fa-facebook fa-2x"></li></a>
+					<a href="http://google.com"><li class="social--icon fa fa-twitter fa-2x"></li></a>
+					<a href="http://google.com"><li class="social--icon fa fa-linkedin fa-2x"></li></a>
+					<a href="http://google.com"><li class="social--icon fa fa-youtube fa-2x"></li></a>
+					<a href="http://google.com"><li class="social--icon fa fa-comments fa-2x"></li></a>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<% } %>
+	</div>
+
+	
+	<%- include('./layout/footer.ejs'); %>

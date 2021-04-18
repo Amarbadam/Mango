@@ -1,9 +1,9 @@
 <%- include('../admin-layout/header.ejs'); %>
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 
-  <h2>Create User</h2>
+  <h2>Edit User</h2>
 
-  <form method="POST" action="/edit/<%= user.id %>">
+  <form method="POST" action="/edit/<%= user.id %>" enctype="multipart/form-data">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Username</label>
       <input 
@@ -35,6 +35,13 @@
        value="<%= user.password %>">
 
     </div>
+    <div class="mb-3">
+      <img src="../images/avatars/<%=user.profilePicture %>" 
+       height="200px"
+       width="200px">
+   <input type="file" class="form-control" name="photo">
+ 
+     </div>
     <button type="submit" class="btn btn-primary">Update</button>
   </form>
       
