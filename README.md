@@ -14,7 +14,7 @@
     
 2. Visual studio дээр file нээнэ
 
-       Onlin_shop /Folder name/
+       Mango /Folder name/
     
 
 3.  Visual Studio дээрээ Terminal нээж доорх кодыг бичээд Enter дарна :
@@ -58,10 +58,7 @@
          ALTER TABLE `blogPost` ADD PRIMARY KEY (`id`);
          ALTER TABLE `blogPost` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 
-7. Visual Studio дээрээ шинэ File үүсгэн ".env " гэж нэрлэнэ
-
-8. Үүсгэсэн File дээрээ доорх кодыг бичнэ үү !  
-  /Password хэсэгт өөрийн үүсгэсэн MySql DataBase password бичнэ үү! /
+7. Visual Studio дээр ".env " /Password хэсэгт өөрийн үүсгэсэн MySql DataBase password бичнэ үү! /
 
        DB_HOST  = 'localhost'
        DB_USERNAME  = 'root'
@@ -74,7 +71,7 @@
 
         npm start  
        
-10.  Browser нээж хайх хэсэгт доорх кодыг бичнэ: 
+10.  Browser нээж хайх хэсэгт доорх кодыг бичэн блог хуудсаа нээнэ: 
    
     localhost:3000 
    
