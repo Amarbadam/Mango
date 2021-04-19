@@ -51,7 +51,7 @@
                         </div>
                         <div class="side-info">
                          
-                          <a href="#0">
+                          <a href="content/<%=users[i].id %>">
                             <h3 class="right-news-title"><%= users[i].title %> </h3>
                           </a>
                           <div class="name">Admin: <%= users[i].user %></div>
@@ -80,8 +80,8 @@
                   <div class="right-side-content">
                     <section class="all-items-list">
                       <ul class="items-list">
-                        <% for(var i=0; i< users.length; i++) { %>
-                          <li><a href="category/<%=users[i].category %>" class="list-item"><%=users[i].category %></a></li>
+                        <% for(var i=0; i< category.length; i++) { %>
+                          <li><a href="category/<%=category[i].category %>" class="list-item"><%=category[i].category %></a></li>
                        
                           <% } %> 
                       </ul>

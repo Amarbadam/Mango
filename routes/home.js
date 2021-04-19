@@ -6,9 +6,12 @@ var connection = require('../connection/connection');
 router.get('/', function(request, response) {
 
 		connection.query('SELECT * FROM blogPost', function (error, results, fields) {
-			response.render("home", {users: results});
+		
+		connection.query('SELECT DISTINCT category  FROM blogPost ' , function (error, category, fields)  {
+			response.render("home", {users: results , category: category});
 		});
 
-	
+	})	
 });
+
 module.exports = router;

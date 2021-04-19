@@ -7,26 +7,32 @@
           <div class="flax-main">
             <main class="main-content">
               <section class="news-posts">
-                <h2 class="category"><%= content.category %></h2>
-             <article class="news-post">
-              <div class="one-news-blog">
-                <h2 class="news-post-title"><%= content.title %></h2>
-                  <div class="footer">
-                     
-                      <div class="name-author">Admin:<%= content.user %> </div>
+                <h2 class="category"><%= category.category %></h2>
+                
+                <% for(var i=0; i< category.length; i++) { %>
+                  <article class="news-post">
+                    <img src="../images/newsPhoto/<%=category[i].blogPhoto %>" class="left-photo" >
+                    <div class="one-news-blog">
+                      <div class="item-news">
+                        <ul>
+                          <li><a href="#0" class="item"><%= category[i].category %></a></li>
+                       
+                        </ul>
+                      </div>
+                      <a href="content/<%=users[i].id %>" >
+                        <h2 class="news-post-title"> <%= category[i].title %></h2>
+                      </a>
+                      
+                      <div class="footer">
+                        
+                        
+                        <div class="name-author">Admin: <%= category[i].user %></div>
+                      </div>
+                      <time class="news-time"><%= category[i].date %></time> 
+                      <div class="text"> <br> Read more  </div>
                     </div>
-                    <time class="news-time" datetime="2019-06-10"><%= content.date %></time>
-                     
-                    <div class="left-photo "> <img src="../images/newsPhoto/<%= content.blogPhoto %>"
-                      width="800px"
-                      height="500px"> </div>
-                      <br>
-
-                    <div class="prewiew-text">1. <br> <%= content.description %> </div>
-                 
-                   </div>
-                </article>
-
+                  </article>
+                <% } %> 
          </section>
             </main>
           </div>
@@ -36,32 +42,16 @@
               <div class="different-sections">
       
          
-                <div class="different-section">
-                  <h3 class="right-news-titles">Ангилал</h3>
-                  <div class="right-side-content">
-                    <section class="items-tegs">
-                      <ul class="all-tegs">
-                        <li><a href="#0" class="teg">Загвар</a></li>
-                        <li><a href="#0" class="teg">Хөгжим</a></li>
-                        <li><a href="#0" class="teg">Хэв маяг</a></li>
-                        <li><a href="#0" class="teg">Урлаг</a></li>
-                        <li><a href="#0" class="teg">Дотоод засал</a></li>
-                        <li><a href="#0" class="teg">Аялал</a></li>
-                        <li><a href="#0" class="teg">Хоол</a></li>
-                        <li><a href="#0" class="teg">Эрүүл мэнд</a></li>
-                      </ul>
-                    </section>
-                  </div>
-                </div>
+             
                 <div class="different-section">
                   <h3 class="right-news-titles">Category</h3>
                   <div class="right-side-content">
                     <section class="all-items-list">
                       <ul class="items-list">
                         <% for(var i=0; i< category.length; i++) { %>
-                        <li><a href="category/<%=category[i].category %>" class="list-item">Manga<span class="number">12</span></a></li>
-                     
-                        <% } %> 
+                          <li><a href="category/<%=category[i].category %>" class="list-item"><%=category[i].category %></a></li>
+                       
+                          <% } %> 
                       </ul>
                   
                      

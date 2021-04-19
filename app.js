@@ -30,6 +30,7 @@ var post = require('./routes/post');
 var home = require('./routes/home');
 var newPost = require('./routes/newPost');
 var img = require('./routes/img');
+var category = require('./routes/category');
 
 
 app.set('view engine', 'ejs')
@@ -63,6 +64,7 @@ app.use('/', post);
 app.use('/', home); 
 app.use('/', newPost); 
 app.use('/', img); 
+app.use('/', category); 
 
 
 
