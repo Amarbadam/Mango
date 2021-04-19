@@ -9,7 +9,7 @@
 
 1.Download хийнэ:  
 
-  Clon https://github.com/Amarbadam/Mango.git    
+  Clon    
 
     
 2. Visual studio дээр file нээнэ
